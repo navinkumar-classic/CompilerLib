@@ -135,17 +135,21 @@ int main(){
    
     cout << endl <<endl << "The Intermediate Code: " << endl;
     vector<vector<string>> quad = inter(ans);
-    cout << endl << endl;
+    cout << endl;
+    cout << "The Quadruple: " << endl;
+    cout << left << setw(14) << "No." << right << "|";
     cout << left << setw(14) << "Operator" << right << "|";
-    cout << left << setw(14) << "Operand 1" << right << "|";
-    cout << left << setw(14) << "Operand 2" << right << "|";
-    cout << left << setw(14) << "Answer" << endl;
+    cout << left << setw(14) << "Argument 1" << right << "|";
+    cout << left << setw(14) << "Argument 2" << right << "|";
+    cout << left << setw(14) << "Result" << endl;
     
+    cout << left << setw(14)  << "" << right << "|";
     cout << left << setw(14)  << "" << right << "|";
     cout << left << setw(14)  << "" << right << "|";
     cout << left << setw(14)  << "" << right << "|" << endl;
     
     for(int i = 0; i < quad.size(); i++){
+        cout << left << setw(14) << i << right << "|";
         cout << left << setw(14) << quad[i][0] << right << "|";
         cout << left << setw(14) << quad[i][1] << right << "|";
         cout << left << setw(14) << quad[i][2] << right << "|";
